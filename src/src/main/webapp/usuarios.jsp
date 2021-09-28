@@ -91,6 +91,7 @@
 				<button style="margin: 10px" id="agregarU" type="submit" class="btn btn-outline-success btn-lg">Crear</button>
 				<button style="margin: 10px" id="actualizarU" type="submit" class="btn btn-outline-success btn-lg">Actualizar</button>
 				<button style="margin: 10px" id="eliminarU" type="submit" class="btn btn-outline-success btn-lg">Borrar</button>
+				<button style="margin: 10px" id="listarU" type="submit" class="btn btn-outline-success btn-lg">Listar</button>
 			</div>
 	</div>
 </div>
