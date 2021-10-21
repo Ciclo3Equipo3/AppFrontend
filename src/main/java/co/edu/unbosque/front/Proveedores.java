@@ -1,17 +1,17 @@
 package co.edu.unbosque.front;
 
 public class Proveedores {
-	private Long nitproveedor;
+	private long nitproveedor;
 	private String ciudad_proveedor;
 	private String direccion_proveedor;
 	private String nombre_proveedor;
 	private String telefono_proveedor;
 	
 	
-	public Long getNitproveedor() {
+	public long getNitproveedor() {
 		return nitproveedor;
 	}
-	public void setNitproveedor(Long nitproveedor) {
+	public void setNitproveedor(long nitproveedor) {
 		this.nitproveedor = nitproveedor;
 	}
 	public String getCiudad_proveedor() {

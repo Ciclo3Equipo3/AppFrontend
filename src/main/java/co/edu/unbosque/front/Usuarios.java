@@ -1,7 +1,7 @@
 package co.edu.unbosque.front;
 
 public class Usuarios {
-	private Long cedula_usuario;
+	private long cedula_usuario;
 	private String nombre_usuario;
 	private String email_usuario;
 	private String usuario;
@@ -12,7 +12,7 @@ public class Usuarios {
 		return cedula_usuario;
 	}
 	
-	public void setCedula_usuario(Long cedula_usuario) {
+	public void setCedula_usuario(long cedula_usuario) {
 		this.cedula_usuario = cedula_usuario;
 	}
 	

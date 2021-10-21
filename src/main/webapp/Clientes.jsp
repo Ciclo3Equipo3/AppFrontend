@@ -50,9 +50,10 @@
 								class="form-control"
 								value="${clienteSeleccionado.getTelefono_cliente()}">
 						</div>
-						<input type="submit" class="btn-outline-dark text-white" name="accion"
-							value="Agregar"> <input type="submit"
-							class="btn-outline-dark text-white" name="accion" value="Actualizar">
+						<div class="p-3" align="center">
+							<input type="submit" class="btn-outline-dark text-white" name="accion"value="Agregar"> 
+							<input type="submit" class="btn-outline-dark text-white" name="accion" value="Actualizar">
+						</div>
 					</form>
 				</div>
 			</div>

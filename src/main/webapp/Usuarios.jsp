@@ -49,9 +49,8 @@
 								class="form-control" required="required" placeholder="Digite una contraseña" value="${usuarioSeleccionado.getClave()}">
 						</div>
 						<div class="p-3" align="center">
-							<input type="submit" class="btn btn-outline-dark text-white" name="accion"
-							value="Agregar"> <input type="submit"
-							class="btn btn-outline-dark text-white" name="accion" value="Actualizar">
+							<input type="submit" class="btn btn-outline-dark text-white" name="accion" value="Agregar"> 
+							<input type="submit" class="btn btn-outline-dark text-white" name="accion" value="Actualizar">
 						</div>
 					</form>
 					

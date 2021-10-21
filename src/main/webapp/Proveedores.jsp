@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=ISO-8859-1"
-	pageEncoding="ISO-8859-1"%>
+	pageEncoding="UTF-8"%>
 <%@page import="co.edu.unbosque.front.Proveedores" %>
 <%@page import="java.util.ArrayList"%>
 
@@ -13,7 +13,7 @@
 	integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
 	crossorigin="anonymous">
 <meta charset="ISO-8859-1">
-<title>Creación de Proveedores</title>
+<title>CreaciÃ³n de Proveedores</title>
 </head>
 <body style="background-color: transparent;">
 	<div class="row">
@@ -41,18 +41,19 @@
 								value="${proveedorSeleccionado.getCiudad_proveedor()}">
 						</div>
 						<div class="form-group">
-							<label>Dirección:</label> <input type="text" name="txtdireccion"
+							<label>DirecciÃ³n:</label> <input type="text" name="txtdireccion"
 								class="form-control"
 								value="${proveedorSeleccionado.getDireccion_proveedor()}">
 						</div>
 						<div class="form-group">
-							<label>Teléfono:</label> <input type="text" name="txttelefono"
+							<label>TelÃ©fono:</label> <input type="text" name="txttelefono"
 								class="form-control"
 								value="${proveedorSeleccionado.getTelefono_proveedor()}">
 						</div>
-						<input type="submit" class="btn btn-outline-dark text-white" name="accion"
-							value="Agregar"> <input type="submit"
-							class="btn btn-outline-dark text-white" name="accion" value="Actualizar">
+						<div class="p-3" align="center">
+							<input type="submit" class="btn btn-outline-dark text-white" name="accion" value="Agregar">
+							<input type="submit" class="btn btn-outline-dark text-white" name="accion" value="Actualizar">
+						</div>
 					</form>
 				</div>
 			</div>
@@ -64,8 +65,8 @@
 						<th scope="col">Nit</th>
 						<th scope="col">Nombre</th>
 						<th scope="col">Ciudad</th>
-						<th scope="col">Dirección</th>
-						<th scope="col">Teléfono</th>
+						<th scope="col">DirecciÃ³n</th>
+						<th scope="col">TelÃ©fono</th>
 					</tr>
 				</thead>
 				<tbody>

@@ -15,7 +15,6 @@ import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
 
-import co.edu.unbosque.front.Proveedores;
 
 public class ProveedoresTestJSON {
 	private static URL url;
@@ -30,9 +29,9 @@ public class ProveedoresTestJSON {
 		JSONObject innerObj = (JSONObject) i.next();
 		Proveedores proveedor = new Proveedores();
 		proveedor.setNitproveedor(Long.parseLong(innerObj.get("nitproveedor").toString()));
-		proveedor.setNombre_proveedor(innerObj.get("nombre_proveedor").toString());
 		proveedor.setCiudad_proveedor(innerObj.get("ciudad_proveedor").toString());
 		proveedor.setDireccion_proveedor(innerObj.get("direccion_proveedor").toString());
+		proveedor.setNombre_proveedor(innerObj.get("nombre_proveedor").toString());		
 		proveedor.setTelefono_proveedor(innerObj.get("telefono_proveedor").toString());
 			lista.add(proveedor);
 		}
@@ -77,9 +76,9 @@ public class ProveedoresTestJSON {
 		
 		String data = "{"
 				+ "\"nitproveedor\":\""+ String.valueOf(proveedor.getNitproveedor())
-				+"\",\"nombre_proveedor\": \""+proveedor.getNombre_proveedor()
 				+"\",\"ciudad_proveedor\": \""+proveedor.getCiudad_proveedor()
 				+"\",\"direccion_proveedor\":\""+proveedor.getDireccion_proveedor()
+				+"\",\"nombre_proveedor\": \""+proveedor.getNombre_proveedor()			
 				+"\",\"telefono_proveedor\":\""+proveedor.getTelefono_proveedor()
 				+ "\"}";
 		byte[] out = data.getBytes(StandardCharsets.UTF_8);
@@ -109,9 +108,9 @@ public class ProveedoresTestJSON {
 	
     	String data = "{"
 			+ "\"nitproveedor\":\""+ id
-			+"\",\"nombre_proveedor\": \""+proveedor.getNombre_proveedor()
 			+"\",\"ciudad_proveedor\": \""+proveedor.getCiudad_proveedor()
 			+"\",\"direccion_proveedor\":\""+proveedor.getDireccion_proveedor()
+			+"\",\"nombre_proveedor\": \""+proveedor.getNombre_proveedor()
 			+"\",\"telefono_proveedor\":\""+proveedor.getTelefono_proveedor()
 			+ "\"}";
     	
